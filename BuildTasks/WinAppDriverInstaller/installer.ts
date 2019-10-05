@@ -2,11 +2,11 @@ import * as taskLib from 'azure-pipelines-task-lib/task';
 import * as toolLib from 'azure-pipelines-tool-lib/tool';
 
 import * as util from 'util';
-const exec = util.promisify(require('child_process').exec);
+const exec = util.promisify(require('node-windows').elevate);
 
 async function execCommand(command: string) {
   console.log('command: ' + command);
-  const { stdout, stderr } = await exec(command);
+  const { stdout, stderr }: { stdout: string|null, stderr: string|null } = await exec(command);
   if (stdout) {
     console.log('stdout: ' + stdout);
   }

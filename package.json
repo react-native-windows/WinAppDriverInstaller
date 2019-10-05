@@ -1,6 +1,6 @@
 {
   "name": "winappdriver-installer",
-  "description": "WinAppDriver installer",
+  "description": "Install different version of WinAppDriver to the agent",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-native-windows/WinAppDriverInstaller.git"

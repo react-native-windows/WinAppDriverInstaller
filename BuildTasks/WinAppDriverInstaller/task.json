@@ -3,7 +3,7 @@
   "id": "8cc922ae-6951-48d4-861e-d306b6c6fbc3",
   "name": "WinAppDriverInstaller",
   "friendlyName": "WinAppDriver Installer",
-  "description": "Install WinAppDriver",
+  "description": "Install WinAppDriver to agent",
   "helpMarkDown": "https://github.com/react-native-windows/WinAppDriverInstaller",
   "category": "Utility",
   "visibility": [
@@ -28,7 +28,7 @@
   ],
   "execution": {
       "Node10": {
-          "target": "installer.js"
+          "target": "dist/installer.js"
       }
   }
 }

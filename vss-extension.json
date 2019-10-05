@@ -1,36 +1,53 @@
 {
-  "manifestVersion": 1,
-  "id": "build-release-task",
-  "name": "WinAppDriver Installer",
-  "version": "0.0.1",
-  "publisher": "licanhua",
-  "targets": [
-      {
-          "id": "Microsoft.VisualStudio.Services"
-      }
-  ],    
-  "description": "Tools for building/releasing with WinAppDriver. Includes one build/release task.",
-  "categories": [
-      "Azure Pipelines"
-  ],
-  "icons": {
-      "default": "icon.png"        
-  },
-  "files": [
-      {
-          "path": "BuildTasks/WinAppDriverInstaller"
-      }
-  ],
-  "contributions": [
-      {
-          "id": "WinAppDriverInstaller",
-          "type": "ms.vss-distributed-task.task",
-          "targets": [
-              "ms.vss-distributed-task.tasks"
-          ],
-          "properties": {
-              "name": "WinAppDriverInstaller"
-          }
-      }
-  ]
+    "manifestVersion": 1,
+    "id": "build-release-task",
+    "name": "WinAppDriver Installer",
+    "version": "0.0.1",
+    "publisher": "licanhua",
+    "content": {
+        "details": {
+          "path": "README.md"
+        }
+      },
+      "links": {
+        "repository": {
+          "uri": "https://github.com/react-native-windows/WinAppDriverInstaller"
+        },
+        "issues": {
+          "uri": "https://github.com/react-native-windows/WinAppDriverInstaller/issues"
+        }
+      },
+      "repository": {
+        "type": "git",
+        "uri": "https://github.com/react-native-windows/WinAppDriverInstaller"
+      },
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "description": "Task to install different version of WinAppDriver to agent.",
+    "categories": [
+        "Azure Pipelines"
+    ],
+    "icons": {
+        "default": "icon.png"
+    },
+    "files": [
+        {
+            "path": "BuildTasks/WinAppDriverInstaller"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "WinAppDriverInstaller",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "BuildTasks/WinAppDriverInstaller"
+            }
+        }
+    ]
 }
