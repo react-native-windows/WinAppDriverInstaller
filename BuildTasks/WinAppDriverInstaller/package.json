@@ -1,0 +1,24 @@
+{
+  "name": "winappdriverinstaller",
+  "version": "0.0.1",
+  "description": "Install WinAppDriver",
+  "main": "installer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "keywords": [
+    "WinAppDriver",
+    "Automation"
+  ],
+  "author": "Canhua Li <licanhua@live.com> (https://github.com/licanhua)",
+  "license": "ISC",
+  "dependencies": {
+    "azure-pipelines-task-lib": "^2.9.3",
+    "azure-pipelines-tool-lib": "^0.12.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.9",
+    "@types/q": "^1.5.2"
+  }
+}

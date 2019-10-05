@@ -1,0 +1,36 @@
+{
+  "manifestVersion": 1,
+  "id": "build-release-task",
+  "name": "WinAppDriver Installer",
+  "version": "0.0.1",
+  "publisher": "licanhua",
+  "targets": [
+      {
+          "id": "Microsoft.VisualStudio.Services"
+      }
+  ],    
+  "description": "Tools for building/releasing with WinAppDriver. Includes one build/release task.",
+  "categories": [
+      "Azure Pipelines"
+  ],
+  "icons": {
+      "default": "icon.png"        
+  },
+  "files": [
+      {
+          "path": "BuildTasks/WinAppDriverInstaller"
+      }
+  ],
+  "contributions": [
+      {
+          "id": "WinAppDriverInstaller",
+          "type": "ms.vss-distributed-task.task",
+          "targets": [
+              "ms.vss-distributed-task.tasks"
+          ],
+          "properties": {
+              "name": "WinAppDriverInstaller"
+          }
+      }
+  ]
+}
