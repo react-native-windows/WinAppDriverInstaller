@@ -1,12 +1,15 @@
 {
     "manifestVersion": 1,
-    "id": "build-release-task",
+    "id": "windows-application-driver-installer",
     "name": "WinAppDriver Installer",
     "version": "0.0.1",
     "publisher": "licanhua",
     "content": {
         "details": {
-          "path": "README.md"
+          "path": "Overview.md"
+        },
+        "license": {
+          "path": "license.txt"
         }
       },
       "links": {
@@ -26,7 +29,7 @@
             "id": "Microsoft.VisualStudio.Services"
         }
     ],
-    "description": "Task to install different version of WinAppDriver to agent.",
+    "description": "Task to install WinAppDriver to agent.",
     "categories": [
         "Azure Pipelines"
     ],

@@ -11,10 +11,7 @@ WinAppDriver is released on [github](https://github.com/Microsoft/WinAppDriver/r
     WinAppDriverVersion: 'v1.1.1'
 ```
 Or
-[assist](Installerparameter.png)
+![assist](Installerparameter.png)
 
 ## Init, build and create package
-`npm run package`
-
-## Note: 
-don't use yarn, otherwise you may have problem to create the package. 
+`npm run package` 
