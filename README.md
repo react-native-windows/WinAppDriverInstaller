@@ -11,7 +11,11 @@ WinAppDriver is released on [github](https://github.com/Microsoft/WinAppDriver/r
     WinAppDriverVersion: 'v1.1.1'
 ```
 Or
+
 ![assist](Installerparameter.png)
 
 ## Init, build and create package
 `npm run package` 
+
+## windows-application-driver-installer in marketplace
+[windows-application-driver-installer](https://marketplace.visualstudio.com/items?itemName=licanhua.windows-application-driver-installer)
