@@ -4,6 +4,7 @@
     "name": "WinAppDriver Installer",
     "version": "0.0.1",
     "publisher": "licanhua",
+    "public": true,
     "content": {
         "details": {
           "path": "Overview.md"
